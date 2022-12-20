@@ -1,0 +1,71 @@
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box{
+    flex-direction: column;
+    position: relative;
+    width: 170px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box .percent{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.box .percent svg circle{
+    width: 150px;
+    height: 150px;
+    fill:none;
+    stroke-width: 7;
+    stroke: #ff8503;
+    transform:translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    
+}
+.box .percent svg circle:nth-child(1){
+    stroke-dashoffset:0;
+}
+.box .percent .ttt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* .box .percent .ttt h2{
+
+} */
+
+.box small{
+    padding: 33px 0 0;
+}
+@media (max-width: 567.98px){
+
+   .clock {
+    display: block;
+    padding: 0 100px 0;
+    margin: 0 auto;
+;
+}
+
+    .box{
+        height: 222px;
+
+    }
+}
