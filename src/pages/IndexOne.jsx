@@ -3,14 +3,18 @@ import Footer from '../components/Footer'
 import HeaderOne from '../components/header/HeaderOne'
 import AreaBg from '../components/headerone/AreaBg'
 import Banner from '../components/headerone/Banner'
+import Login from "../components/headerone/Login";
 
 function IndexOne() {
   return (
     <>
         <HeaderOne/>
             <main>
-                <Banner/>
-                <AreaBg/>
+              {/* if () { */}
+                <Banner />
+                <Login />
+                <AreaBg />
+              {/* } */}
             </main>
         <Footer/>
     </>

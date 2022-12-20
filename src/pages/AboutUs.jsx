@@ -9,11 +9,13 @@ function AboutUs() {
   return (
     <>
         <HeaderOne/>
-            <main>
-                <Breadcrumb/>
-                <Areabg/>
-                <AboutArea/>
-            </main>
+        if () {
+          <main>
+            <Breadcrumb />
+            <Areabg />
+            <AboutArea />
+          </main>
+        }
         <Footer/>
     
     </>
