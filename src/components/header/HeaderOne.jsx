@@ -1,6 +1,8 @@
 import React,{ useEffect } from 'react'
 import { Link } from "react-router-dom";
 import $ from "jquery";
+import { useState } from 'react';
+import LoginModal from '../headerone/LoginModal';
 
 function HeaderOne() {
   useEffect(()=>{
@@ -64,6 +66,7 @@ $(window).on('scroll', function () {
 });
 
 
+
 /*=============================================
 	=    		 Scroll Up  	         =
 =============================================*/
@@ -82,7 +85,8 @@ if ($('.scroll-to-target').length) {
 
   },[])
 
-  
+  // Login popup modal
+  const [OpenLogin, setOpenLogin] = useState(false);
   return (
           
           <header>
@@ -109,7 +113,8 @@ if ($('.scroll-to-target').length) {
                       <div className="header-action">
                         <ul>
                           <li className="header-sine">
-                            <a href="/contact"><i className="far fa-edit" />log-in</a>
+                        <a onClick={() => setOpenLogin(true)}><i className="far fa-edit"/>log-in</a>
+                        <LoginModal open={OpenLogin} onClose={() => setOpenLogin(false)}/>
                           </li>
                         </ul>
                       </div>

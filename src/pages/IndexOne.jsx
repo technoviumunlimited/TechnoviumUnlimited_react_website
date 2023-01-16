@@ -9,7 +9,7 @@ function IndexOne() {
     <>
         <HeaderOne/>
             <main>
-                <Banner/>
+                <Banner />
                 <AreaBg />
             </main>
 

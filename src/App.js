@@ -15,7 +15,6 @@ import MatchSingle from './pages/MatchSingle';
 import Squad from './pages/Squad';
 import Shop from './pages/Shop';
 import ShopDetails from './pages/ShopDetails';
-import Login from '../src/components/headerone/Login';
 import $ from "jquery";
 
 
@@ -37,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        {/* <Route path="/" element={<IndexOne/>}/>
+        <Route path="/" element={<IndexOne/>}/>
         <Route path="index-2" element={<IndexTwo/>}/>
         <Route path="index-3" element={<IndexThree/>}/>
         <Route path="about-us" element={<AboutUs/>}/>
@@ -48,10 +47,8 @@ function App() {
         <Route path="match-single" element={<MatchSingle/>}/>
         <Route path="our-squad" element={<Squad/>}/>
         <Route path="shop" element={<Shop/>}/>
-        <Route path="shop-details" element={<ShopDetails/>}/> */}
+        <Route path="shop-details" element={<ShopDetails/>}/>
       </Routes>
-
-      <Login />
     </div>
   );
 }
