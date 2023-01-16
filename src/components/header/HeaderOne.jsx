@@ -87,6 +87,7 @@ if ($('.scroll-to-target').length) {
 
   // Login popup modal
   const [OpenLogin, setOpenLogin] = useState(false);
+
   return (
           
           <header>
@@ -113,7 +114,7 @@ if ($('.scroll-to-target').length) {
                       <div className="header-action">
                         <ul>
                           <li className="header-sine">
-                        <a onClick={() => setOpenLogin(true)}><i className="far fa-edit"/>log-in</a>
+                        <a href="" onClick={() => setOpenLogin(true)}><i className="far fa-edit"/>log-in</a>
                         <LoginModal open={OpenLogin} onClose={() => setOpenLogin(false)}/>
                           </li>
                         </ul>
